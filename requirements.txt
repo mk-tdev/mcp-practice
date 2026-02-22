@@ -1,0 +1,7 @@
+langchain
+mcp
+langgraph
+ollama
+fastapi
+uvicorn
+black
