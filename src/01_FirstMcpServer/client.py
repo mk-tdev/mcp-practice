@@ -11,11 +11,15 @@ async def main():
             print("Session ID:", get_session_id())
             print("Initialized MCP session")
             tools = await session.list_tools()
+            print("-" * 50)
             print("Available tools:", tools)
+            print("-" * 50)
             
+            print("-" * 50)
             # call tool
             result = await session.call_tool("hello", {"name": "World"})
             print("Tool result:", result)
+            print("-" * 50)
 
 if __name__ == "__main__":
     asyncio.run(main())
